@@ -1,0 +1,103 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+header {
+    background-color: #FF6F61;
+}
+
+.container {
+    max-width: 1288px;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+}
+
+header .container {
+    padding: 16px;
+    color: #fdcdd5;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header h1 {
+    font-weight: bold;
+    font-style: italic;
+    border-bottom: 1px solid #fdcdd5;
+}
+
+header nav li  {
+    display: inline;
+    margin-left: 16px;
+    list-style: none;
+    font-size: 18px;
+}
+
+header nav li a {
+    color:#fdcdd5;
+    text-decoration: none;
+}
+
+#sobre,
+#produtos {
+    margin-top: 24px;
+}
+
+.sobre-a-loja {
+    margin-left: 24px;
+}
+
+#sobre img {
+    height: 320px;
+}
+
+.sobre-a-loja h2 {
+    font-weight: bold;
+    font-style: italic;
+    border-bottom: 2px solid #fdcdd5;
+    color: #FF6F61;
+    text-align: center;
+}
+
+.sobre-a-loja p {
+    margin-top: 12px;
+    text-align: justify;
+    text-justify: distribute-all-lines;
+}
+
+#produtos h1 {
+    color: #FF6F61;
+}
+
+.lista-produtos {
+    display: grid;
+    grid-template-columns: repeat(4, 24.25%);
+    column-gap: 1%;
+}
+
+.lista-produtos ul {
+    display: flex;
+}
+
+
+
+
+
+/*
+paleta de cores 
+
+Laranja Principal: #FF6F61 (Um tom vibrante e alegre de laranja que chama a atenção).
+
+Laranja Suave: #FFB6A6 (Um tom mais suave de laranja que pode ser usado para destaques e botões).
+
+Rosa Principal: #FF69B4 (Um rosa vibrante e moderno que se destaca).
+
+Rosa Suave: #FFC0CB (Um tom mais suave de rosa que pode ser usado para fundos e detalhes).
+
+Branco Neutro: #FFFFFF (Um branco limpo que pode ser usado para o fundo geral do site e para o texto).
+
+Cinza Neutro: #F5F5F5 (Um cinza claro que pode ser usado para espaços em branco e áreas de destaque
+*/
