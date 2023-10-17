@@ -41,44 +41,41 @@ header nav li a {
     text-decoration: none;
 }
 
-
-#produtos {
-    margin-top: 24px;
-}
-
 .sobre-a-loja {
     background-image: url("https://prohall.com.br/wp-content/uploads/2023/05/como-melhorar-o-visual-merchandising-da-sua-loja-e-atrair-mais-clientes.jpg");
     background-position: center;
     background-size: cover;
-    height: 30em;
+    height: 60vh;
 }
 
 .sobre-a-loja h2 {
     font-weight: bold;
     font-style: italic;
-    border-bottom: 2px solid #fdcdd5;
     color: #FF6F61;
     text-align: center;
     font-size: 2em;
-background-color: #fdcdd5;
+    background-color: #fdcdd5;
 }
 
 .container-sobre {
-    position: relative;
     border-radius: 10px;
     outline-color: black;
     text-align: center;
-    align-items: center;
-    background-color: #FF6F61;
+    background-color: #ff6e61c4;
+    outline: 3px solid #fdcdd5;
     width: 70%;
-    left: 10%;
+    margin-right: 15%;
+    margin-left: 15%;
+    margin-top: 5%;
 }
 
 .sobre-a-loja p {
-    margin-top: 6em;
-    text-align: center;
     font-size: 1em;
     color: #fdcdd5;
+}
+
+#produtos {
+    margin-top: 24px;
 }
 
 #produtos h1 {
