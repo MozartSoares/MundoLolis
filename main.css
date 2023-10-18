@@ -2,7 +2,12 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    height: 100% auto;
     font-family: 'Roboto', sans-serif;
+}
+
+html {
+    overflow-x: hidden;
 }
 
 header {
@@ -13,7 +18,6 @@ header {
     max-width: 1288px;
     width: 100%;
     margin: 0 auto;
-    display: flex;
 }
 
 header .container {
@@ -21,6 +25,7 @@ header .container {
     color: #fdcdd5;
     align-items: center;
     justify-content: space-between;
+    display: flex;
 }
 
 header h1 {
@@ -41,11 +46,18 @@ header nav li a {
     text-decoration: none;
 }
 
-.sobre-a-loja {
-    background-image: url("https://prohall.com.br/wp-content/uploads/2023/05/como-melhorar-o-visual-merchandising-da-sua-loja-e-atrair-mais-clientes.jpg");
-    background-position: center;
-    background-size: cover;
-    height: 60vh;
+
+.container-flex {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    margin-top: 1vh;
+}
+
+img {
+    max-width: 100%;
+    max-height: 360px;
+    object-fit: contain;
 }
 
 .sobre-a-loja h2 {
@@ -59,44 +71,147 @@ header nav li a {
 
 .container-sobre {
     border-radius: 10px;
-    outline-color: black;
     text-align: center;
-    background-color: #ff6e61c4;
+    font-size: 1em;
+    background-color: #ff6e61ef;
     outline: 3px solid #fdcdd5;
-    width: 70%;
-    margin-right: 15%;
-    margin-left: 15%;
-    margin-top: 5%;
+    margin-left: 1vw;
+    margin-top: 1%;
 }
 
 .sobre-a-loja p {
-    font-size: 1em;
     color: #fdcdd5;
 }
 
-#produtos {
-    margin-top: 24px;
+.produtos {
+    display: block;
+}
+
+hr {
+    border: 0;
+    border-top: 4px solid #fdcdd5;
+    max-width: 100%;
+    margin-left: 10%;
+    margin-right: 10%;
 }
 
 #produtos h1 {
+    text-align: center;
+    font-size: 2em;
     color: #FF6F61;
+    font-style: italic;
 }
 
 .lista-produtos {
     display: grid;
-    grid-template-columns: repeat(4, 24.25%);
-    column-gap: 1%;
+    align-items: center;
+    margin-top: 1vh;
+    grid-template-columns: 24% 24% 24% 24%;
+    column-gap: 2%;
+    height: 100%;
+    margin-left: 1vw;
 }
 
-.lista-produtos ul {
-    display: flex;
+.lista-produtos img {
+    max-width: 100%;
+    max-height: 100%;
+    width: 309.11px;
+    height: 309.11px;
+    object-fit: contain;
+}
+
+.lista-produtos li {
+    list-style: none;
+    color: #FF6F61;
+}
+
+.lista-produtos h3 {
+    text-decoration: underline 2px;
+}
+
+.lista-produtos p {
+    color:  #f6856c;
+    font-size: 0.8em;
+}
+
+.lista-produtos strong {
+    color: red;
+}
+
+button {
+    outline: 1px solid #f6856c;
+    border: none;
+    background-color: #FFC0CB;
+    border-radius: 5px;
+    width: 80%;
+    margin-left: 10%;
+    font-size: large;
+    font-style: italic;
+    font-weight: bold;
+    color: #f5795e;
+    margin-top: 1vh;
+}
+
+button:hover {
+    cursor: pointer;
+    background-color: #ffb6a67b;
 }
 
 
 
 
+@media screen and (width < 640px) {
+    .container {
+        max-width: 90%;
+    }
 
-/*
+    .lista-produtos{
+        display: block;
+        text-align: center;
+    }
+    .lista-produtos li{
+        margin-bottom: 30px;
+    }
+
+    button {
+        margin-left: 0;
+    }
+
+    .container-flex {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .container-sobre {
+        width: 95%;
+        text-align: center;
+    }
+}
+
+@media screen and (641px <= width <=1023px){
+    .container-flex {
+        flex-direction: column;
+        align-items: center;
+        position: ;
+    }
+
+    .container-flex img {
+        width: 100%;
+    }
+
+    .container-sobre {
+        width:  95%
+    }
+    .lista-produtos {
+        grid-template-columns: 50% 50%;
+        text-align: center;
+    }
+    .lista-produtos li {
+        margin-top: 10px;
+    }
+
+
+}
 paleta de cores 
 
 Laranja Principal: #FF6F61 (Um tom vibrante e alegre de laranja que chama a atenção).
